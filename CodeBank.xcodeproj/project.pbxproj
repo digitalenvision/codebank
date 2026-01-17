@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D42178D2F184E6A003C04B3 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = PKG001 /* SQLite */; };
+		5D42178E2F184E6A003C04B3 /* Crypto in Frameworks */ = {isa = PBXBuildFile; productRef = PKG002 /* Crypto */; };
+		5D42178F2F184E6A003C04B3 /* Highlightr in Frameworks */ = {isa = PBXBuildFile; productRef = PKG003 /* Highlightr */; };
+		5D4217912F185117003C04B3 /* CoreTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4217902F185117003C04B3 /* CoreTypes.swift */; };
+		5DFEA48F2F19968F00C7E20F /* codebank_logo-light.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5DFEA48E2F19968F00C7E20F /* codebank_logo-light.svg */; };
+		5DFEA4902F19968F00C7E20F /* codebank.icon in Resources */ = {isa = PBXBuildFile; fileRef = 5DFEA48C2F19968F00C7E20F /* codebank.icon */; };
+		5DFEA4922F19969000C7E20F /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5DFEA4932F19969000C7E20F /* AppIcon.icns */; };
+		5DFEA4912F19968F00C7E20F /* codebank_logo-dark.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5DFEA48D2F19968F00C7E20F /* codebank_logo-dark.svg */; };
+		ABT001 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCH01 /* AboutView.swift */; };
+		APP001 /* CodeBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC001 /* CodeBankApp.swift */; };
+		APP002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC002 /* AppState.swift */; };
+		APP003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC003 /* AppDelegate.swift */; };
+		CMP001 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCA01 /* SecureTextField.swift */; };
+		CMP002 /* PasswordStrengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCA02 /* PasswordStrengthView.swift */; };
+		CMP003 /* CopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCA03 /* CopyButton.swift */; };
+		CMP004 /* TagPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCA04 /* TagPicker.swift */; };
+		CMP005 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCA05 /* ToastView.swift */; };
+		CMP006 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCA06 /* ButtonStyles.swift */; };
+		CMP007 /* SecureContentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCA07 /* SecureContentModifier.swift */; };
+		CMP008 /* CodeBankLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCA08 /* CodeBankLogo.swift */; };
+		CRY001 /* KeyDerivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC301 /* KeyDerivation.swift */; };
+		CRY002 /* EncryptionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC302 /* EncryptionEngine.swift */; };
+		EDT001 /* ItemEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC801 /* ItemEditorView.swift */; };
+		EDT002 /* SyntaxHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC802 /* SyntaxHighlighter.swift */; };
+		EXT001 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCB01 /* Color+Theme.swift */; };
+		EXT002 /* String+Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCB02 /* String+Shell.swift */; };
+		IMP001 /* ENVImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCD01 /* ENVImportView.swift */; };
+		MAN001 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC601 /* MainView.swift */; };
+		MAN002 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC602 /* SidebarView.swift */; };
+		MAN003 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC603 /* ItemListView.swift */; };
+		MAN004 /* APIKeyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC604 /* APIKeyDetailView.swift */; };
+		MAN005 /* DatabaseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC605 /* DatabaseDetailView.swift */; };
+		MAN006 /* ServerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC606 /* ServerDetailView.swift */; };
+		MAN007 /* SSHDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC607 /* SSHDetailView.swift */; };
+		MAN008 /* CommandDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC608 /* CommandDetailView.swift */; };
+		MAN009 /* SecureNoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC609 /* SecureNoteDetailView.swift */; };
+		MAN010 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC610 /* ItemDetailView.swift */; };
+		MNU001 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCG01 /* MenuBarView.swift */; };
+		MOD001 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC101 /* Project.swift */; };
+		MOD002 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC102 /* Item.swift */; };
+		MOD003 /* ItemTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC103 /* ItemTypes.swift */; };
+		MOD004 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC104 /* Tag.swift */; };
+		ONB001 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCF01 /* OnboardingView.swift */; };
+		PWG001 /* PasswordGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCE01 /* PasswordGeneratorView.swift */; };
+		QSR001 /* QuickSearchPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC701 /* QuickSearchPanel.swift */; };
+		QSR002 /* QuickSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC702 /* QuickSearchViewModel.swift */; };
+		QSR003 /* QuickSearchResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC703 /* QuickSearchResultRow.swift */; };
+		RES001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = RESC01 /* Assets.xcassets */; };
+		SET001 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC401 /* SetupView.swift */; };
+		SET002 /* SetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC402 /* SetupViewModel.swift */; };
+		SHR001 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRCC01 /* Constants.swift */; };
+		STG001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC901 /* SettingsView.swift */; };
+		STG002 /* SecuritySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC902 /* SecuritySettingsView.swift */; };
+		SVC001 /* VaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC201 /* VaultService.swift */; };
+		SVC002 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC202 /* StorageService.swift */; };
+		SVC003 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC203 /* KeychainService.swift */; };
+		SVC004 /* BiometricService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC204 /* BiometricService.swift */; };
+		SVC005 /* ClipboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC205 /* ClipboardService.swift */; };
+		SVC006 /* CommandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC206 /* CommandService.swift */; };
+		SVC007 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC207 /* SearchService.swift */; };
+		SVC008 /* ImportExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC208 /* ImportExportService.swift */; };
+		SVC009 /* ENVParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC209 /* ENVParserService.swift */; };
+		SVC010 /* KeyboardShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC210 /* KeyboardShortcutManager.swift */; };
+		UNL001 /* UnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC501 /* UnlockView.swift */; };
+		UNL002 /* UnlockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = SRC502 /* UnlockViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D4217902F185117003C04B3 /* CoreTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTypes.swift; sourceTree = "<group>"; };
+		5DFEA48C2F19968F00C7E20F /* codebank.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = codebank.icon; sourceTree = "<group>"; };
+		5DFEA4932F19969000C7E20F /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		5DFEA48D2F19968F00C7E20F /* codebank_logo-dark.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "codebank_logo-dark.svg"; sourceTree = "<group>"; };
+		5DFEA48E2F19968F00C7E20F /* codebank_logo-light.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "codebank_logo-light.svg"; sourceTree = "<group>"; };
+		CNF001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CNF002 /* CodeBank.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeBank.entitlements; sourceTree = "<group>"; };
+		PRD001 /* CodeBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		RESC01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		SRC001 /* CodeBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBankApp.swift; sourceTree = "<group>"; };
+		SRC002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		SRC003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		SRC101 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		SRC102 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		SRC103 /* ItemTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTypes.swift; sourceTree = "<group>"; };
+		SRC104 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		SRC201 /* VaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultService.swift; sourceTree = "<group>"; };
+		SRC202 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		SRC203 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		SRC204 /* BiometricService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricService.swift; sourceTree = "<group>"; };
+		SRC205 /* ClipboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardService.swift; sourceTree = "<group>"; };
+		SRC206 /* CommandService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandService.swift; sourceTree = "<group>"; };
+		SRC207 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		SRC208 /* ImportExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportService.swift; sourceTree = "<group>"; };
+		SRC209 /* ENVParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENVParserService.swift; sourceTree = "<group>"; };
+		SRC210 /* KeyboardShortcutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutManager.swift; sourceTree = "<group>"; };
+		SRC301 /* KeyDerivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDerivation.swift; sourceTree = "<group>"; };
+		SRC302 /* EncryptionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionEngine.swift; sourceTree = "<group>"; };
+		SRC401 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		SRC402 /* SetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewModel.swift; sourceTree = "<group>"; };
+		SRC501 /* UnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockView.swift; sourceTree = "<group>"; };
+		SRC502 /* UnlockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockViewModel.swift; sourceTree = "<group>"; };
+		SRC601 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		SRC602 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		SRC603 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		SRC604 /* APIKeyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyDetailView.swift; sourceTree = "<group>"; };
+		SRC605 /* DatabaseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseDetailView.swift; sourceTree = "<group>"; };
+		SRC606 /* ServerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDetailView.swift; sourceTree = "<group>"; };
+		SRC607 /* SSHDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHDetailView.swift; sourceTree = "<group>"; };
+		SRC608 /* CommandDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDetailView.swift; sourceTree = "<group>"; };
+		SRC609 /* SecureNoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureNoteDetailView.swift; sourceTree = "<group>"; };
+		SRC610 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		SRC701 /* QuickSearchPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSearchPanel.swift; sourceTree = "<group>"; };
+		SRC702 /* QuickSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSearchViewModel.swift; sourceTree = "<group>"; };
+		SRC703 /* QuickSearchResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSearchResultRow.swift; sourceTree = "<group>"; };
+		SRC801 /* ItemEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEditorView.swift; sourceTree = "<group>"; };
+		SRC802 /* SyntaxHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxHighlighter.swift; sourceTree = "<group>"; };
+		SRC901 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		SRC902 /* SecuritySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuritySettingsView.swift; sourceTree = "<group>"; };
+		SRCA01 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
+		SRCA02 /* PasswordStrengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrengthView.swift; sourceTree = "<group>"; };
+		SRCA03 /* CopyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyButton.swift; sourceTree = "<group>"; };
+		SRCA04 /* TagPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPicker.swift; sourceTree = "<group>"; };
+		SRCA05 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		SRCA06 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		SRCA07 /* SecureContentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureContentModifier.swift; sourceTree = "<group>"; };
+		SRCA08 /* CodeBankLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBankLogo.swift; sourceTree = "<group>"; };
+		SRCB01 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		SRCB02 /* String+Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Shell.swift"; sourceTree = "<group>"; };
+		SRCC01 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		SRCD01 /* ENVImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENVImportView.swift; sourceTree = "<group>"; };
+		SRCE01 /* PasswordGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorView.swift; sourceTree = "<group>"; };
+		SRCF01 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		SRCG01 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		SRCH01 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FRM001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D42178F2F184E6A003C04B3 /* Highlightr in Frameworks */,
+				5D42178E2F184E6A003C04B3 /* Crypto in Frameworks */,
+				5D42178D2F184E6A003C04B3 /* SQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		GRP000 = {
+			isa = PBXGroup;
+			children = (
+				GRP001 /* CodeBank */,
+				GRP999 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		GRP001 /* CodeBank */ = {
+			isa = PBXGroup;
+			children = (
+				GRP010 /* App */,
+				GRP020 /* Features */,
+				GRP030 /* Core */,
+				GRP040 /* Shared */,
+				GRP050 /* Resources */,
+				CNF001 /* Info.plist */,
+				CNF002 /* CodeBank.entitlements */,
+			);
+			path = CodeBank;
+			sourceTree = "<group>";
+		};
+		GRP010 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				SRC001 /* CodeBankApp.swift */,
+				SRC002 /* AppState.swift */,
+				SRC003 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		GRP020 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				GRP021 /* Setup */,
+				GRP022 /* Unlock */,
+				GRP023 /* Main */,
+				GRP024 /* QuickSearch */,
+				GRP025 /* Editor */,
+				GRP026 /* Settings */,
+				GRP027 /* Import */,
+				GRP028 /* PasswordGenerator */,
+				GRP029 /* Onboarding */,
+				GRP02A /* MenuBar */,
+				GRP02B /* About */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		GRP021 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				SRC401 /* SetupView.swift */,
+				SRC402 /* SetupViewModel.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		GRP022 /* Unlock */ = {
+			isa = PBXGroup;
+			children = (
+				SRC501 /* UnlockView.swift */,
+				SRC502 /* UnlockViewModel.swift */,
+			);
+			path = Unlock;
+			sourceTree = "<group>";
+		};
+		GRP023 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				SRC601 /* MainView.swift */,
+				SRC602 /* SidebarView.swift */,
+				SRC603 /* ItemListView.swift */,
+				GRP0231 /* DetailView */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		GRP0231 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				SRC610 /* ItemDetailView.swift */,
+				SRC604 /* APIKeyDetailView.swift */,
+				SRC605 /* DatabaseDetailView.swift */,
+				SRC606 /* ServerDetailView.swift */,
+				SRC607 /* SSHDetailView.swift */,
+				SRC608 /* CommandDetailView.swift */,
+				SRC609 /* SecureNoteDetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		GRP024 /* QuickSearch */ = {
+			isa = PBXGroup;
+			children = (
+				SRC701 /* QuickSearchPanel.swift */,
+				SRC702 /* QuickSearchViewModel.swift */,
+				SRC703 /* QuickSearchResultRow.swift */,
+			);
+			path = QuickSearch;
+			sourceTree = "<group>";
+		};
+		GRP025 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				SRC801 /* ItemEditorView.swift */,
+				SRC802 /* SyntaxHighlighter.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		GRP026 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				SRC901 /* SettingsView.swift */,
+				SRC902 /* SecuritySettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		GRP027 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				SRCD01 /* ENVImportView.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
+		GRP028 /* PasswordGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				SRCE01 /* PasswordGeneratorView.swift */,
+			);
+			path = PasswordGenerator;
+			sourceTree = "<group>";
+		};
+		GRP029 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				SRCF01 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		GRP02A /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				SRCG01 /* MenuBarView.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		GRP02B /* About */ = {
+			isa = PBXGroup;
+			children = (
+				SRCH01 /* AboutView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		GRP030 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				GRP031 /* Models */,
+				GRP032 /* Services */,
+				GRP033 /* Crypto */,
+				5D4217902F185117003C04B3 /* CoreTypes.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		GRP031 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				SRC101 /* Project.swift */,
+				SRC102 /* Item.swift */,
+				SRC103 /* ItemTypes.swift */,
+				SRC104 /* Tag.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		GRP032 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				SRC201 /* VaultService.swift */,
+				SRC202 /* StorageService.swift */,
+				SRC203 /* KeychainService.swift */,
+				SRC204 /* BiometricService.swift */,
+				SRC205 /* ClipboardService.swift */,
+				SRC206 /* CommandService.swift */,
+				SRC207 /* SearchService.swift */,
+				SRC208 /* ImportExportService.swift */,
+				SRC209 /* ENVParserService.swift */,
+				SRC210 /* KeyboardShortcutManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		GRP033 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				SRC301 /* KeyDerivation.swift */,
+				SRC302 /* EncryptionEngine.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		GRP040 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				GRP041 /* Components */,
+				GRP042 /* Extensions */,
+				SRCC01 /* Constants.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		GRP041 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				SRCA01 /* SecureTextField.swift */,
+				SRCA02 /* PasswordStrengthView.swift */,
+				SRCA03 /* CopyButton.swift */,
+				SRCA04 /* TagPicker.swift */,
+				SRCA08 /* CodeBankLogo.swift */,
+				SRCA05 /* ToastView.swift */,
+				SRCA06 /* ButtonStyles.swift */,
+				SRCA07 /* SecureContentModifier.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		GRP042 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				SRCB01 /* Color+Theme.swift */,
+				SRCB02 /* String+Shell.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		GRP050 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				RESC01 /* Assets.xcassets */,
+				5DFEA48C2F19968F00C7E20F /* codebank.icon */,
+				5DFEA4932F19969000C7E20F /* AppIcon.icns */,
+				5DFEA48D2F19968F00C7E20F /* codebank_logo-dark.svg */,
+				5DFEA48E2F19968F00C7E20F /* codebank_logo-light.svg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		GRP999 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				PRD001 /* CodeBank.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TGT001 /* CodeBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCL001 /* Build configuration list for PBXNativeTarget "CodeBank" */;
+			buildPhases = (
+				SRC000 /* Sources */,
+				FRM001 /* Frameworks */,
+				RSC001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeBank;
+			packageProductDependencies = (
+				PKG001 /* SQLite */,
+				PKG002 /* Crypto */,
+				PKG003 /* Highlightr */,
+			);
+			productName = CodeBank;
+			productReference = PRD001 /* CodeBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PRJ001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					TGT001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = BCL000 /* Build configuration list for PBXProject "CodeBank" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = GRP000;
+			packageReferences = (
+				PKR001 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				PKR002 /* XCRemoteSwiftPackageReference "swift-crypto" */,
+				PKR003 /* XCRemoteSwiftPackageReference "Highlightr" */,
+			);
+			productRefGroup = GRP999 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TGT001 /* CodeBank */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RSC001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DFEA48F2F19968F00C7E20F /* codebank_logo-light.svg in Resources */,
+				5DFEA4902F19968F00C7E20F /* codebank.icon in Resources */,
+				5DFEA4922F19969000C7E20F /* AppIcon.icns in Resources */,
+				5DFEA4912F19968F00C7E20F /* codebank_logo-dark.svg in Resources */,
+				RES001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SRC000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D4217912F185117003C04B3 /* CoreTypes.swift in Sources */,
+				APP001 /* CodeBankApp.swift in Sources */,
+				APP002 /* AppState.swift in Sources */,
+				APP003 /* AppDelegate.swift in Sources */,
+				MOD001 /* Project.swift in Sources */,
+				MOD002 /* Item.swift in Sources */,
+				MOD003 /* ItemTypes.swift in Sources */,
+				MOD004 /* Tag.swift in Sources */,
+				SVC001 /* VaultService.swift in Sources */,
+				SVC002 /* StorageService.swift in Sources */,
+				SVC003 /* KeychainService.swift in Sources */,
+				SVC004 /* BiometricService.swift in Sources */,
+				SVC005 /* ClipboardService.swift in Sources */,
+				SVC006 /* CommandService.swift in Sources */,
+				SVC007 /* SearchService.swift in Sources */,
+				SVC008 /* ImportExportService.swift in Sources */,
+				SVC009 /* ENVParserService.swift in Sources */,
+				SVC010 /* KeyboardShortcutManager.swift in Sources */,
+				IMP001 /* ENVImportView.swift in Sources */,
+				CRY001 /* KeyDerivation.swift in Sources */,
+				CRY002 /* EncryptionEngine.swift in Sources */,
+				SET001 /* SetupView.swift in Sources */,
+				SET002 /* SetupViewModel.swift in Sources */,
+				UNL001 /* UnlockView.swift in Sources */,
+				UNL002 /* UnlockViewModel.swift in Sources */,
+				MAN001 /* MainView.swift in Sources */,
+				MAN002 /* SidebarView.swift in Sources */,
+				MAN003 /* ItemListView.swift in Sources */,
+				MAN004 /* APIKeyDetailView.swift in Sources */,
+				MAN005 /* DatabaseDetailView.swift in Sources */,
+				MAN006 /* ServerDetailView.swift in Sources */,
+				MAN007 /* SSHDetailView.swift in Sources */,
+				MAN008 /* CommandDetailView.swift in Sources */,
+				MAN009 /* SecureNoteDetailView.swift in Sources */,
+				MAN010 /* ItemDetailView.swift in Sources */,
+				QSR001 /* QuickSearchPanel.swift in Sources */,
+				QSR002 /* QuickSearchViewModel.swift in Sources */,
+				QSR003 /* QuickSearchResultRow.swift in Sources */,
+				EDT001 /* ItemEditorView.swift in Sources */,
+				EDT002 /* SyntaxHighlighter.swift in Sources */,
+				STG001 /* SettingsView.swift in Sources */,
+				STG002 /* SecuritySettingsView.swift in Sources */,
+				CMP001 /* SecureTextField.swift in Sources */,
+				CMP002 /* PasswordStrengthView.swift in Sources */,
+				CMP003 /* CopyButton.swift in Sources */,
+				CMP004 /* TagPicker.swift in Sources */,
+				CMP008 /* CodeBankLogo.swift in Sources */,
+				CMP005 /* ToastView.swift in Sources */,
+				CMP006 /* ButtonStyles.swift in Sources */,
+				CMP007 /* SecureContentModifier.swift in Sources */,
+				PWG001 /* PasswordGeneratorView.swift in Sources */,
+				ONB001 /* OnboardingView.swift in Sources */,
+				MNU001 /* MenuBarView.swift in Sources */,
+				ABT001 /* AboutView.swift in Sources */,
+				EXT001 /* Color+Theme.swift in Sources */,
+				EXT002 /* String+Shell.swift in Sources */,
+				SHR001 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CFG001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4KZXBAKMDL;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFG002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4KZXBAKMDL;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CFG003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				AUTOMATION_APPLE_EVENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = CodeBank/CodeBank.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CodeBank/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "CodeBank - Credentials Manager\nCodeBank - Credentials Manager\nCodeBank - Credentials Manager";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Digital Envision. All rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalenvision.codebank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CFG004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				AUTOMATION_APPLE_EVENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = CodeBank/CodeBank.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CodeBank/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "CodeBank - Credentials Manager\nCodeBank - Credentials Manager\nCodeBank - Credentials Manager";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Digital Envision. All rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalenvision.codebank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCL000 /* Build configuration list for PBXProject "CodeBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFG001 /* Debug */,
+				CFG002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCL001 /* Build configuration list for PBXNativeTarget "CodeBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFG003 /* Debug */,
+				CFG004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		PKR001 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.0;
+			};
+		};
+		PKR002 /* XCRemoteSwiftPackageReference "swift-crypto" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-crypto.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		PKR003 /* XCRemoteSwiftPackageReference "Highlightr" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raspu/Highlightr.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		PKG001 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = PKR001 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		PKG002 /* Crypto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = PKR002 /* XCRemoteSwiftPackageReference "swift-crypto" */;
+			productName = Crypto;
+		};
+		PKG003 /* Highlightr */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = PKR003 /* XCRemoteSwiftPackageReference "Highlightr" */;
+			productName = Highlightr;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = PRJ001 /* Project object */;
+}
