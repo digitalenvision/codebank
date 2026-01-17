@@ -68,7 +68,19 @@ CodeBank is a native macOS application designed for developers who need a secure
 - Apple Silicon or Intel Mac
 
 ### Download
-Download the latest release from the [Releases](https://github.com/digitalenvision/codebank/releases) page.
+
+<p align="center">
+  <a href="https://drive.google.com/drive/folders/1-nfPmU6MmDZq6S6IwvQoxhsnN0nfZvh9?usp=sharing">
+    <img src="https://img.shields.io/badge/Download-CodeBank-blue?style=for-the-badge&logo=apple" alt="Download CodeBank">
+  </a>
+</p>
+
+**[⬇️ Download CodeBank](https://drive.google.com/drive/folders/1-nfPmU6MmDZq6S6IwvQoxhsnN0nfZvh9?usp=sharing)** (Google Drive)
+
+1. Download `CodeBank.zip` from the link above
+2. Unzip the file
+3. Drag `CodeBank.app` to your Applications folder
+4. Open CodeBank and create your master password
 
 ### Homebrew (Coming Soon)
 ```bash
